@@ -1,0 +1,150 @@
+* {
+margin: 0px;
+padding: 0px;
+font-family: Georgia;
+}
+
+body {
+  background-image: url("achtergrond.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+iframe{
+
+}
+#container {
+  display: grid;
+  grid-template-columns: 1.5fr 6fr 1.5fr;
+  grid-template-rows: 1fr 5fr ;
+
+  grid-template-areas: "begin begin begin"
+                      "links midden rechts";
+
+
+}
+a.menu {
+  font-size: 17px;
+}
+#mail {
+font-size: 30
+}
+
+img{
+  align-items: center;
+}
+p.vraag {
+  text-align: justify;
+  font-size: 20px;
+  font-style: bold;
+}
+p.antwoord {
+  color: #0051a3;
+  background-color: #0051a3;
+}
+.antwoord:hover {
+  color: white;
+  font-weight: bold;
+}
+#uitleg{
+  text-align: right;
+  font-style: italic;
+}
+.box {
+  min-height: 00px;
+}
+.genestenlijst{
+  margin-left: 25px;
+}
+#bovenbalk{
+  max-height: 100px
+}
+#video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#bovenbalk {
+  grid-area: begin;
+  border: 2px solid #0051a3;
+  border-radius: 10px 10px 10px 10px;
+  display: flex;
+  justify-content: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  margin-left: 10px;
+  margin-right: 10px;
+
+  margin-top: 10px;
+
+}
+#linkerkolom {
+  border: 2px solid #0051a3;
+  border-radius: 10px 10px 10px 10px;
+  grid-area: links;
+  margin: 10px;
+  padding-left: 20px;
+  padding-right: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  background-color: ;
+
+}
+a:hover {
+  background-color: #ffbf00;
+}
+a {
+  text-decoration: none;
+  color: #0051a3
+}
+a:link {
+  text-decoration: none;
+  color: #0051a3
+}
+a:visited {
+  text-decoration: none;
+  color: #0051a3
+}
+h1 {
+  font-family: Georgia;
+  color: #ffbf00;
+}
+h2 {
+  font-family: Georgia;
+  color: #ffbf00;
+}
+#centrum {
+  grid-area: midden;
+  background-color: rgba(255, 255, 255, 0.65);
+  border: 2px;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+#rechterkolom {
+  grid-area: rechts;
+  border: 2px solid #0051a3;
+  border-radius: 10px 10px 10px 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: ;
+}
+/*#onderkant{*/
+  /*border: 2px solid #0051a3;
+  border-radius: 10px 10px 10px 10px;*/
+  /*grid-area: onder;
+  background-color: ;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}*/
